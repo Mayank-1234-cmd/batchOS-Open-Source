@@ -19,6 +19,26 @@ if %command%== $sudo_date.disp goto dispdate
 if %command%== $sudo_date.change goto changedate
 if %command%== $sudo_dtime.disp goto displaydatetime
 
+: timedisp
+
+: changetime
+
+: dispdate
+cls
+echo %date%
+pause
+cls
+goto sudo
+
+: changedate
+
+: displaydatetime
+cls
+echo %date% %time%
+pause
+cls
+goto sudo
+
 :error
 start error.vbs
 goto sudo
