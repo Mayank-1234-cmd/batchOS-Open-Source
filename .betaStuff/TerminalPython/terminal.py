@@ -1,3 +1,4 @@
+import os;
 from turtle import*
 from time import*
 from os import*
@@ -15,7 +16,12 @@ def terminal():
         sleep(sec)
         terminal()
     elif command==("$.start_application"):
-        startapplication()
+        
+        whichstart = raw_input("Which One to start? Enter choice:")
+        os.system(whichstart); 
+        raw_input();
+        terminal()
+        
     elif command==("$.exit"):
         exit()
     elif command==("$ver"):
@@ -24,7 +30,8 @@ def terminal():
         print("Version 0.4")
         terminal()
     elif command==("$random"):
-        num=randint(1,9999999999999999999999999999)
+        randomend = raw_input("Up to how much numbers? Enter your option: ")
+        num=randint(1,randomend)
         print()
         print("Randomly Generated Number:")
         print(num)
@@ -51,6 +58,7 @@ def helpmodule():
     print("Displays the terminal version")
     print()
     print("$.exit")
+    
     print("Exits the terminal")
     print()
     print("$random")
