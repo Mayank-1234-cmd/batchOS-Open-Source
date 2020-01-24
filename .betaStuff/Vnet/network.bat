@@ -3,10 +3,10 @@ title batchOS -- Virtual Networking
 goto menu
 
 :menu
-echo.
+echo ---------------------------------------------------------
 echo                batchOS Beta Feature
 echo                 Virtual Networking
-echo.
+echo ---------------------------------------------------------
 echo To select a menu option, type the letter in
 echo the brackets.
 echo.
@@ -73,7 +73,7 @@ echo Saving Setup Information
 echo.
 echo Setup Information >> setup.ini
 echo. >> setup.ini
-echo Setup Completed at %time% %date% >> setup.ini
+echo Setup Completed at %time% %date% by %username% >> setup.ini
 echo.
 echo Setup Information Saved.
 echo.
