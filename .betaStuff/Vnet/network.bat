@@ -30,7 +30,8 @@ if %choice%== c goto closeshare
 if %choice%== P goto disconnect
 if %choice%== p goto disconnect
 if %choice%== ? goto help
-
+goto invalidcommand
+:: same as else goto invalid command
 :invalidcommand
 echo.
 echo This is not a valid menu option
